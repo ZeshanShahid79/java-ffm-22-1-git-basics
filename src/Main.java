@@ -13,7 +13,7 @@ public class Main {
         System.out.println(sum(9, 4));
         System.out.println(sumString(5, 16));
         System.out.println(compare(99, 98));
-       // System.out.println(getSum());
+        System.out.println(getSum());
         System.out.println("length ist größer als 20 " + checkLength(" a ")+ " contains fancy " + containsFancy("this is suit super fancy"));
 
 
