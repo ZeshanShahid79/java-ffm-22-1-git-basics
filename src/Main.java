@@ -12,8 +12,10 @@ public class Main {
         System.out.println(subtract(9, 4));
         System.out.println(sum(9, 4));
         System.out.println(sumString(5, 16));
-        System.out.println(compare(99,98));
-        System.out.println(getSum());
+        System.out.println(compare(99, 98));
+       // System.out.println(getSum());
+        System.out.println("length ist größer als 20 " + checkLength(" a ")+ " contains fancy " + containsFancy("this is suit super fancy"));
+
 
     }
 
@@ -36,19 +38,27 @@ public class Main {
     }
 
     public static boolean compare(int Value1, int Value2) {
-        return Value1>100 || Value2>100;
+        return Value1 > 100 || Value2 > 100;
     }
 
-   public static int getSum() {
-       Scanner scanner = new Scanner(System.in);
-       System.out.println("Geben Sie einen Text ein und drücken Sie ENTER:");
-       int Value1 = scanner.nextInt();
-       System.out.println("Geben Sie einen Text ein und drücken Sie ENTER:");
-       int Value2 = scanner.nextInt();
+    public static int getSum() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Geben Sie einen Text ein und drücken Sie ENTER:");
+        int Value1 = scanner.nextInt();
+        System.out.println("Geben Sie einen Text ein und drücken Sie ENTER:");
+        int Value2 = scanner.nextInt();
 
-       return sum(Value1, Value2);
+        return sum(Value1, Value2);
+    }
 
+    public static boolean checkLength(String input){
+        return  input.length() > 20;
 
+    }
 
-   }
+    public static boolean containsFancy(String input){
+
+        return   input.contains("fancy");
+
+    }
 }
