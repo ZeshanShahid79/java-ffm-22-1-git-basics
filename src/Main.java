@@ -10,6 +10,7 @@ public class Main {
         System.out.println(subtract(9, 4));
         System.out.println(sum(9, 4));
         System.out.println(sumString(5, 16));
+        System.out.println(compare(99,98));
 
     }
 
@@ -29,5 +30,9 @@ public class Main {
 
 
         return "Summe: " + result;
+    }
+
+    public static boolean compare(int Value1, int Value2) {
+        return Value1>100 || Value2>100;
     }
 }
