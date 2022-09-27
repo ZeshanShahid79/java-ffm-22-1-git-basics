@@ -3,6 +3,7 @@ public class Main {
 
         System.out.println("Moin");
         System.out.println("Goodbye");
+        System.out.println(42);
 
     }
 
