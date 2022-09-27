@@ -12,12 +12,10 @@ public class Main {
 
     }
     public static int subtract(int value1, int value2) {
-        int result = value1 - value2;
-    return result;
+        return value1 - value2;
     }
 
     public static int sum(int value1, int value2) {
-        int result = value1 + value2;
-        return result;
+        return value1 + value2;
     }
 }
