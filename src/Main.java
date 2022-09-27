@@ -8,9 +8,16 @@ public class Main {
         System.out.println("git test");
         System.out.println("Moin");
         System.out.println(subtract(9, 4));
+        System.out.println(sum(9, 4));
+
     }
-    public static int subtract(int value1, int value2){
+    public static int subtract(int value1, int value2) {
         int result = value1 - value2;
     return result;
+    }
+
+    public static int sum(int value1, int value2) {
+        int result = value1 + value2;
+        return result;
     }
 }
