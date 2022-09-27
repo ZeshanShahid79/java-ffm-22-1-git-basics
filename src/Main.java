@@ -13,8 +13,11 @@ public class Main {
         System.out.println(sum(9, 4));
         System.out.println(sumString(5, 16));
         System.out.println(compare(99, 98));
-        System.out.println(getSum());
+       // System.out.println(getSum());
         System.out.println("length ist größer als 20 " + checkLength(" a ")+ " contains fancy " + containsFancy("this is suit super fancy"));
+        System.out.println(peopleInShop(30));
+        System.out.println(peopleInShop(31));
+        System.out.println(customerInShop(4,"yellow"));
 
 
     }
@@ -61,4 +64,34 @@ public class Main {
         return   input.contains("fancy");
 
     }
+
+    public static String peopleInShop(int people){
+        if(people > 30){
+            return "Too many people";
+        } else {
+           return "limit not exceeded";
+        }
+    }
+
+    public static String customerInShop(int customers, String level){
+        int limit;
+        switch(level){
+            case "red":
+                limit = 0;
+                break;
+            case "yellow":
+                limit = 30;
+                break;
+            case "green":
+                limit = 60;
+                break;
+            default:
+                limit = 0;
+                break;
+        }
+        if (customers >= limit){
+            return "Entry Stop";
+        } else return "Come in and find out";
+    }
+
 }
