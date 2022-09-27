@@ -43,9 +43,9 @@ public class Main {
 
     public static int getSum() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Geben Sie einen Text ein und drücken Sie ENTER:");
+        System.out.println("Geben Sie eine Zahl ein und drücken Sie ENTER:");
         int Value1 = scanner.nextInt();
-        System.out.println("Geben Sie einen Text ein und drücken Sie ENTER:");
+        System.out.println("Geben Sie eine Zahl ein und drücken Sie ENTER:");
         int Value2 = scanner.nextInt();
 
         return sum(Value1, Value2);
