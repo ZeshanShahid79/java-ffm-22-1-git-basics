@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hi!");
@@ -11,6 +13,7 @@ public class Main {
         System.out.println(sum(9, 4));
         System.out.println(sumString(5, 16));
         System.out.println(compare(99,98));
+        System.out.println(getSum());
 
     }
 
@@ -35,4 +38,17 @@ public class Main {
     public static boolean compare(int Value1, int Value2) {
         return Value1>100 || Value2>100;
     }
+
+   public static int getSum() {
+       Scanner scanner = new Scanner(System.in);
+       System.out.println("Geben Sie einen Text ein und drücken Sie ENTER:");
+       int Value1 = scanner.nextInt();
+       System.out.println("Geben Sie einen Text ein und drücken Sie ENTER:");
+       int Value2 = scanner.nextInt();
+
+       return sum(Value1, Value2);
+
+
+
+   }
 }
